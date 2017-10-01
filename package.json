@@ -1,0 +1,23 @@
+{
+  "name": "smoreweb",
+  "version": "1.0.0",
+  "description": "SmoreSoftware's Website rewrite",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmoreSoftware/SmoreWeb.git"
+  },
+  "author": "SmoreSoftware Web Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmoreSoftware/SmoreWeb/issues"
+  },
+  "homepage": "https://github.com/SmoreSoftware/SmoreWeb#readme"
+}
