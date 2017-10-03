@@ -10,8 +10,16 @@ app.use(express.static("public_html"));
 app.get('/discord', function(req, res){
    res.redirect(301, `https://discord.gg/6P6MNAU`)
    console.log(`Discord Redirect sent to ${req.ip}`)
-   next()
 });
+
+app.get('/bots/:bot', function(req, res){
+    if(req.params.bot === 'smore') {
+        res.redirect(301, `https://discordapp.com/oauth2/authorize?permissions=360054015&scope=bot&client_id=290228059599142913`)
+        console.log(`Smore Redirect sent to ${req.ip}`)
+    } else {
+        res.send('Please provide a valid bot')
+    }
+ });
 
 app.get('/*', function(req, res){
    res.sendFile(__dirname + '/public_html/error.html');
