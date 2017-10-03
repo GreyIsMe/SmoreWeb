@@ -25,7 +25,7 @@ app.get('/bots/:bot', function(req, res){
     }
  });
 
-app.get('/', function(req, res){
+app.get('/*', function(req, res){
    res.sendFile(__dirname + '/public_html/404.html');
    console.log(`Error Page sent to ${req.ip}`)
 });
