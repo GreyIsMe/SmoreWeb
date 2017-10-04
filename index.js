@@ -12,6 +12,11 @@ app.get('/discord', function(req, res){
    console.log(`Discord Redirect sent to ${req.ip}`)
 });
 
+app.get('/contact', function(req, res){
+    res.redirect(301, `mailto:smorebtofficail@gmail.com`)
+    console.log(`Email Redirect sent to ${req.ip}`)
+ });
+
 app.get('/bots/:bot', function(req, res){
     if(req.params.bot === 'smore') {
         res.redirect(301, `https://discordapp.com/oauth2/authorize?permissions=360054015&scope=bot&client_id=290228059599142913`)
