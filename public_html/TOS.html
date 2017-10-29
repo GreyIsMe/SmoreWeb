@@ -1,0 +1,49 @@
+<h1>SmoreSoftware User Terms of Service Agreement</h1>
+
+This SmoreSoftware User Terms of Service (“Agreement”) is between SmoreSoftware (“Smoresoftware” or “us”) and you (“you” or “Licensee”).
+
+SmoreSoftware has developed multiple Chat Bots ("bots" or "our bots") for use with the Discord online and mobile chat platform ("Discord"). By using our bots, you agree to be bound by this Agreement. You are expected to have read and understood this Agreement. SmoreSoftware is not responsible for any damage done to servers by our bots so long as no developers are at fault.
+
+<h2>1. User Data</h2>
+
+1.1a <b>User Data.</b> User Data includes but is not limited to User IDs, profile pictures, User Names, and User Tags. SmoreSoftware uses User Data is a means to customize the Licensee's experience and help the Licensee in any way possible. Usage may include but is not limited to debugging information for commands such as "suggest" or "support," information to identify a user, use within message embeds, and logging about command usage.
+
+1.1b <b>Guild Data.</b> Guild Data includes but is not limited to Guild IDs, Guild Icons, Guild Names, Member Count, Roles, Channels, and Roles possessed by a Member. Guild Data is a means to customize the Licensee's experience even further and help the Licensee in any way that the User Data is not helpful for. Usage may include but is not limited to debugging information for commands such as "suggest" or "support," information to identify a guild, use within message embeds, and logging about command usage. Furthermore, the developers use may use Guild Data in any way they need so long as they do not use it for any malicious purposes. Developers reserve the right to generate an invite to a guild in order to provide support or determine if the guild has been abusing any of our bots.
+
+1.2 <b>Usage and Storage of User Data and Guild Data.</b> SmoreSoftware reserves the right to use and store User Data and Guild Data in any way necessary for the functionality of our bots. SmoreSoftware will not use User Data or Guild Data for any malicious purposes, but will only use them when they are required for specific commands or features of our bots. User Data and Guild will only be stored in specific situations in which they are needed for a feature to persist. This includes but is not limited to user currency, blacklisting, and access to specific perks.
+
+<h2>2. Bot Usage</h2>
+
+2.1 <b>Bot Guilds.</b> Bot Guilds are defined as guilds where 80% of the member count is bots. Our bots leave Bot Guilds automatically for several reasons. (a) Bot Guilds cause spam and take resources away from actual, legitimate users. (b) Bot Guilds invalidate the guild count. (c) Bot Guilds could cause something we do not want our bots to get caught up in.
+
+2.2 <b>Official Server Bans.</b> SmoreSoftware has 2 official servers: the main support server and the Discord S'mores server. If you are banned from either server for any reason, you will be banned from the other server and blacklisted from all of our bots.
+
+2.3 <b>Spam and Bot Abuse.</b> If you spam commands or abuse any of our bots in any way, you will be blacklisted and banned from both official servers. We will also add you to both Discord banlists and warn other bot developers about you.
+
+2.4 <b>Known API Abusers.</b> If you are known for abusing the Discord API and we notice you are using any of our bots, you will be banned from both official servers and blacklisted from all of our bots. We will also add you to both Discord banlists, warn other bot developers about you, and if need be, email Discord.
+
+<h2>3. SmoreBot</h2>
+
+3.1 <b>SmoreBot.</b> SmoreBot is SmoreSoftware's general purpose bot. It can be found <a href="https://github.com/SmoreSoftware/SmoreBot">here</a>.
+
+3.2 <b>Currency System.</b> SmoreBot uses a Currency System to give the Licensee access to specific perks, games, and access to the Discoin API. The currency is a virtual, non-real currency known as SBT (SmoreBot Tokens.) SBT can not be transferred to real money and bears no real-world value. SBT is earned through how active the Licensee is. Every minute, the Licensee can earn some points through sending a message. Once the Licensee has 100 or more points, the points are converted to 1 SBT. Furthermore, 100 SBT can be earned each day through the use of the "daily" command.
+
+3.3 <b>Currency Storage.</b> SmoreBot uses a database to store the Licensee's points and SBT values. The database only stores the Licensee's User ID, SBT value, and points value. SmoreSoftware does not use this information for anything malicious. The information can be accessed by any user through the "balance" command. SmoreSoftware reserves the right to store and use only the data required for the function of the currency system.
+
+3.4 <b>Message Collection.</b> SmoreBot also has the ability to quote user's messages and provide a simple starboard. As such, it collects messages. However, developers do not have access to a channel's messages or user's messages. There is no constant stream of messages sent back to the bot. Instead, there are two basic ways SmoreBot has access to messages. (a) When the Licensee runs the "quote" command, the last 100 messages from that channel are fetched and the messages sent by the user being quoted are filtered out and listed. Messages are not stored and developers never have access to any message. (b) There is a handler for the event that runs when a reaction is added to a message. It is waiting for a message to be reacted to with the ":star:" emoji. When it finds one, it fetches the message that was reacted to, ensures the reaction was not added by the author of the message, and if all checks pass, it grabs the message information, formats it, and sends the starred message to the channel set as the starboard.
+
+<h2>4. Discord S'mores</h2>
+
+4.1 <b>Discord S'mores.</b> Discord S'mores is SmoreSoftware's food bot. It can be found <a href="https://github.com/SmoreSoftware/DiscordSmores">here</a>.
+
+4.2 <b>Currency System.</b> Discord S'mores uses a Currency System to give the Licensee access to perks and purchase of food items. Its function and storage is the same as that of SmoreBot. See 3.2 and 3.3.
+
+4.3 <b>Order System.</b> Discord S'mores is a food bot, meaning that its primary function is to give the Licensee virtual food. As such, it uses an Order System to allow the Licensee to pick a food item and get it delivered to them. The Order System makes use of User Data in order to log the order to a channel on the official server and deliver the item to the Licensee. By using Discord S'mores, you give SmoreSoftware the right to use that data in any non-malicious way required.
+
+4.4 <b>Order Automation.</b> Discord S'mores uses automation in conjunction with its Order System (See 4.3) to make the system seem more realistic and provide an extra element to the functionality of the bot. This Automation is initiated when the Licensee runs the "order" command. From the time an order is placed, there is a random 1-3 minute delay before the order is put into the oven to cook. The cooking takes a set 3 minutes. After the order is cooked, there is another random 1-3 minute delay before the order is placed out for delivery. The bot then sends the user a message containing the order.
+
+4.5 <b>Order Storage and User Data.</b> Discord S'mores does not persistently store data required for its Order System (See 4.3. Because the system is automated (See 4.4), storage of User Data is not required for the Order System to function. Instead, the only User Data used is the Licensee's User ID and Avatar, used within the message the bot sends to the official server on the order being created.
+
+<h2>5. Acknowledgement</h2>
+
+Use of our bots affirms that the Licensee has read this Agreement, understands it, and agrees to be bound by its contents.
