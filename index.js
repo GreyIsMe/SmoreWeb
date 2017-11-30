@@ -4,7 +4,7 @@ const helmet = require('helmet');
 app.use(helmet())
 
 //listening on ports below 1024 requires root
-const port = 8000
+const port = 80
 
 function running() {
     console.log(`listening on port: ${port}`);
@@ -29,6 +29,38 @@ app.get('/bots/:bot', function(req, res){
     } else {
         res.send('Please provide a valid bot');
     };
+});
+
+//block pages that are under construction
+
+app.get('/about.html', function(req, res){
+	res.sendFile(__dirname + '/public_html/maintenance.html');
+	console.log(`Error Page sent to ${req.ip}`);
+});
+
+app.get('/projects.html', function(req, res){
+	res.sendFile(__dirname + '/public_html/maintenance.html');
+	console.log(`Error Page sent to ${req.ip}`);
+});
+
+app.get('/team.html', function(req, res){
+	res.sendFile(__dirname + '/public_html/maintenance.html');
+	console.log(`Error Page sent to ${req.ip}`);
+});
+
+app.get('/smorebot.html', function(req, res){
+	res.sendFile(__dirname + '/public_html/maintenance.html');
+	console.log(`Error Page sent to ${req.ip}`);
+});
+
+app.get('/dsmores.html', function(req, res){
+	res.sendFile(__dirname + '/public_html/maintenance.html');
+	console.log(`Error Page sent to ${req.ip}`);
+});
+
+app.get('/vert.html', function(req, res){
+	res.sendFile(__dirname + '/public_html/maintenance.html');
+	console.log(`Error Page sent to ${req.ip}`);
 });
 
 app.get('/*', function(req, res){
