@@ -3,8 +3,11 @@ const app = express();
 const helmet = require('helmet');
 app.use(helmet())
 
+//listening on ports below 1024 requires root
+const port = 8000
+
 function running() {
-    console.log(`listening on port: 80`);
+    console.log(`listening on port: ${port}`);
 };
 
 app.use(express.static("public_html"));
@@ -33,4 +36,4 @@ app.get('/*', function(req, res){
    console.log(`Error Page sent to ${req.ip}`);
 });
  
-app.listen(80, running);
+app.listen(port, running);

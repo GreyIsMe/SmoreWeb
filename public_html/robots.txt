@@ -1,0 +1,2 @@
+SmoreSoftware is an ameture software development company all about fun, even if that means starting out with discord bots. SmoreSoftware strives to make bots to make 
+Discord users' lives easier. From moderation to ordering virtual s'mores, SmoreSoftware's bots serve a wide variety of users.
